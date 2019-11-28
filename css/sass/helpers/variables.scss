@@ -1,0 +1,31 @@
+//--------------color
+$whitecolor: #ffffff;
+$blackcolor: #000000;
+$primarycolor: #fbc52a;
+$secondarycolor: #222222;
+$graycolor: #a7a7a7;
+$bgcolor: #f9faff;
+// $firstgradincolor: rgb(130, 143, 255);
+// $secondgradiuncolor: rgb(208, 149, 255);
+//=============size
+html{
+    font-size: 16px;
+}
+$fontsize: 1em;
+//=============fonttype
+$font: 'Roboto', sans-serif;
+$text-upper: uppercase;
+$text-capital: capitalize;
+//=================size-for-padding
+$sizepad: 20px;
+$border: 1px solid $whitecolor;
+
+// vendors
+$vendors: "-moz-", "-webkit-", "-o-", "-ms-", ""; 
+//================bg image
+$filePath: '../img/banner/home-banner.jpg';
+$img-1: '../image/image2.png';
+$img-2: '../image/image2.png';
+$img-3: '../image/image3.png';
+$img-6: '../image/image6.png';
+$bg-video: '../img/video-1.png';

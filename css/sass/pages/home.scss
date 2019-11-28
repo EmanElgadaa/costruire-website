@@ -1,0 +1,331 @@
+.edit-margin-bottom{
+    margin-bottom: 100px;
+}
+/*--------section two--------*/
+.service{
+    h2{
+        @extend %h2typefont;
+        &::before{
+          @extend %beforepoint;
+        }
+      }
+      .icon-1 ,.icon-2{
+        position: absolute;
+        background-color: $primarycolor;
+        i{color: $whitecolor;}
+      }
+      .icon-1{
+        top: 0;
+        left: 13%;
+        i{
+            font-size: 20px;
+        }
+        }
+        .icon-2{
+        top: 10%;
+        left: 13%;
+        i{
+            font-size: 20px;
+        }
+        }
+    .arc1{
+        @extend %commonImg;
+        background-image: url($img-1);
+        margin-top: 5%;
+    }
+    .arc2{
+        @extend %commonImg;
+        background-image: url($img-3);
+        margin-top: 5%;
+    }
+    .ren1{
+        @extend %commonImg;
+        background-image: url($img-6);
+        margin-top: 20%; 
+        margin-bottom: 20%;
+    }
+    .ren2{
+        @extend %commonImg;
+        background-image: url($img-2);
+        margin-top: 20%; 
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: #0000008f;
+    }
+    .architectuare ,.renvotion{
+        p{
+            color: $whitecolor;
+        }
+        i{
+            color: $primarycolor;
+        }
+    }
+}
+/*---------about-us----------*/
+.about-us{
+    h2{
+        @extend %h2typefont;
+        &::before{
+            @extend %beforepoint;
+        }
+    }
+    .about-par{
+        font-family: $font;
+        font-size: 1rem;
+        width: 55%;
+        margin: 0 auto;
+        text-align: center;
+        color: #5a5959;
+    }
+    .vision ,.mission ,.strategy {
+        i{
+            color: $primarycolor;
+            font-size: 30px;
+            padding-right: 5px;
+        }
+    }
+    .edit-para{
+        font-family: $font;
+        font-size: .85rem !important;
+        width: 80%;
+        color: #5a5959;
+    }
+}
+/*---------latest project---------*/
+.latest-project{
+    h2{
+        @extend %h2typefont;
+        &::before{
+            @extend %beforepoint;
+        }
+    }
+    .filter{
+        .filter-all{
+            background-color: #fbc52a;
+            text-align: center;
+            ul {
+                display: inline-block;
+                li{
+                    display: inline-block;
+                    padding: 0 10px;
+                    color: #000000;
+                    &:hover{
+                        background-color: #000000;
+                        color: $whitecolor !important;
+                       }
+                    a{
+                        color: unset;
+                        font-weight: 700;
+                        font-size: .9rem;
+                        font-family: $font;
+                    }
+                }
+            }
+        }
+        .image{
+            .cont {
+                position: relative;
+                width: 100%;
+                .imagex {
+                    display: block;
+                    width: 100%;
+                    /* height: 100%; */
+                  }
+                  &:hover .overlay {
+                    opacity: 1;
+                  }
+              }
+              .overlay {
+                position: absolute; 
+                bottom: 0; 
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                width: 100%;
+                transition: .5s ease;
+                opacity:0;
+                color: $whitecolor;
+                font-size: 20px;
+                padding: 20px;
+                height: 100%;
+                h6{
+                    font-size: .9rem;
+                    font-family: $font; 
+                    font-weight: 500;
+                    margin-bottom: 30%;
+                  }
+                  p{
+                    font-size: .65rem;
+                  }
+              }
+        }
+        .load{
+            background-color: #e8e4e4;
+            p{
+                font-size: 1rem;
+                font-family: $font; 
+            }
+        }
+    }
+   }   
+/*-----------logo-----------*/
+   .logo{
+   }
+/*-------------testimonials-----------*/
+.testimonials{
+    .opinion{
+        background-image: url(../image/architecture-3357028_1280.jpg);
+        height: 100%;
+        color: $whitecolor;
+        .opi-overlay{
+            background-color: #000000e8;
+            height: 100%;
+            .all-opinion{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                h2{
+                    @extend %h2typefont;
+                    color: $whitecolor;
+                    &::before{
+                        @extend %beforepoint;
+                    }
+                }
+                .first-opinion{
+                    background-color: #6b6a6a33;
+                    .review{
+                        color: #b5b0b0;
+                        width: 80%;
+                    }
+                    p{
+                        font-family: $font;
+                        font-size: .75rem;
+                    }
+                }
+                .second-opinion{
+                    background-color: #7574744d;
+                    .review{
+                        color: #b5b0b0;
+                        width: 80%;   
+                    }
+                    p{
+                        font-family: $font;
+                        font-size: .75rem;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+/*-------------latest post-----------*/
+.latest-post{
+    h2{
+        @extend %h2typefont;
+        &::before{
+            @extend %beforepoint;
+        }
+    }
+    .latest-content{
+        .post1{
+            background-image: url(../image/image7.png);
+            height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            .overlay-post{
+                width: 100%;
+                height: 100%;
+                background-color: #e8e8e8d4;
+                .year{
+                    background-color: #fbc52a;
+                    color: #000000;
+                    width: 50px;
+                    display: inline-block;
+                    text-align: center;
+                    span{
+                        font-family: $font;
+                        font-size: .8rem;
+                        font-weight: 600; 
+                    }
+                    &::after{
+                        content: " ";
+                        width: 185px;
+                        height: 3px;
+                        background-color: #000000;
+                        text-align: center;
+                        display: block;
+                        margin-left: 50px;
+                    }
+                }
+                .month{
+                    width: 50px;
+                    display: inline-block;
+                    float: right;
+                }
+                .modern{
+                    font-family: $font;
+                    font-size: 1.2rem;
+                    font-weight: 400; 
+                }
+                .visible-para{
+                    opacity: 0; 
+                  }
+                .post-image{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background-image: url(../image/girlx3.jpg);
+                    background-size: contain;
+                    margin-top: 40px;
+                }
+            }
+            &:hover{
+                .visible-para{
+                    opacity: 1;
+                    color: $whitecolor;
+                }
+            }
+            &:hover{
+                .overlay-post{
+                    background-color: #060606d6;;
+                }
+            }
+            &:hover{
+                .modern ,.month span{
+                    color: $whitecolor;
+                }
+                .post-image{
+                    float: right;
+                    display: inline-block; 
+                }
+                .icon-dis{
+                    display: inline-block;
+                    color: $whitecolor;
+                    margin-top: 65px;
+                    font-size: 25px;
+                }
+            }
+            &:hover{
+                .year::after{
+                background-color: $whitecolor;
+            }}
+        }
+    }
+}
+
+.edit-post{
+    margin-top: 20%;
+}
+
+.icon-dis{
+display: none;
+}
+
+.bar-icon{
+    
+}

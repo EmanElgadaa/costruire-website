@@ -1,0 +1,76 @@
+/*---------------footer--------------------*/
+footer{
+    background-color: #1d1d1d;
+    .footer-logo {
+        h3{
+            color: $whitecolor;
+        }
+    }
+    hr{
+        background-color: #333333b8;
+    }
+    .social {
+        ul{
+            display: inline-block;
+             li{
+                display: inline-block;
+            }
+        } 
+    }
+    .footer-content {
+        h6{
+            margin-bottom: 1rem;
+        }
+        .about-para{
+            color: #b5b0b0;
+            font-family: lato;
+            font-size: .75rem;
+            width: 85%;
+        }
+        .update{
+            width: 90%;
+            .email-input{
+                background-color: unset;
+                border: 1px solid #333333b8;
+                color: #333333b8;
+                border-radius: 0px 30px 30px 0px;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    }
+    .menu-content{
+        width: 80%;
+        margin-bottom: 1rem;
+        p{
+            font-family: lato;
+            font-size: .8rem;
+            color: #b5b0b0;
+            line-height: 1 !important; 
+            &::after{
+                content: " ";
+                width: 20px;
+                height: 2px;
+                background-color: $primarycolor;
+                text-align: start;
+                display: block;
+                margin-top: 3px;
+            }
+        }
+    }
+    h6{
+        color: $whitecolor;
+    }
+    .copy-right{
+        color: #5a5959;
+    }
+}
+
+
+
+
+
+
+ 
+
+

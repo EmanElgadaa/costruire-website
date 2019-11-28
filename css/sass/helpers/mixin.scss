@@ -1,0 +1,87 @@
+//================raduis
+
+@mixin rounded($radius: 0.5em) {
+  @each $vendor in $vendors {
+		#{$vendor}border-radius: $radius;
+	}
+}
+
+//========================background image
+@mixin background-image($filePath, $bgXpos: relative, $bgReapeat:no-repeat, $bgSize:cover, $height:250px) {
+  background-image: url($filePath);
+  position: $bgXpos;
+  background-repeat: $bgReapeat;
+  background-size: $bgSize;
+  height: $height;
+}
+%commonImg{@include background-image($filePath , relative, no-repeat, cover, 250px);}
+@mixin background-color($background-color) //==============background-color
+{
+  background-color: $background-color ;
+}
+
+@mixin typoStyle($font, $size:14px, $textcolor:$graycolor) //=======================type font
+{
+	font-family: $font;
+	font-size: $size;
+	// line-height: $size * 1.618;
+	// text-transform: $texttransform;
+	color: $textcolor;
+}
+%commontypefont
+{
+	 @include typoStyle($font, $fontsize , $graycolor);
+	padding: 15px 0;
+	text-align: center;
+}
+%h2typefont{
+     @include typoStyle($font,1.1rem , $blackcolor);
+    font-weight: 700;
+}
+@mixin btn($btn-bg-color,$border:0,$f-color:$blackcolor) //=================btn
+{
+	background-color: $btn-bg-color;
+	border: $border;
+	color: $f-color;
+	@extend %commonbtn;
+}
+
+@mixin coborder($width:200px,$height:50px)
+{
+	border: $border;
+	width: $width;
+	height: $height;
+}
+%inputfooter
+{
+	border-radius: 25px;
+    border: 0;
+	padding: 15px 5px;
+}
+//================gradient
+@mixin bord($bordcolor)
+{
+	border: 1px solid $bordcolor;
+}
+%commonbtn//common property in input
+{
+	min-width: 170px;
+	text-align: left;
+	line-height: 1;
+	@include rounded(0.3rem);
+//	@include box-shadow(5px, 4.5px, 9.5px, 0, lighten($blackcolor, 55%));
+//	@include box-shadow( 0 ,4px ,8px ,0, rgba(0, 0, 0, 0.1), 0, 6px, 20px ,0 ,rgba(0, 0, 0, 0.1));
+	margin: 0.25rem;
+	padding: 1.3rem 2.5rem;
+}
+%beforepoint
+{
+    content: " ";
+    width: 7px;
+    height: 7px;
+    background-color: #fbc52a;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
